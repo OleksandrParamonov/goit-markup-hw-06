@@ -265,8 +265,9 @@ img {
 .hero-btn-txt {
   font-weight: 700;
   font-size: 16px;
+  letter-spacing: 0.06em;
   line-height: calc(30 / 16);
-  color: #ffffff;
+  color: var(--white-txt-cl);
 }
 
 /*Advantades*/
@@ -413,7 +414,7 @@ img {
   background-color: var(--main-bg-btn-cl);
 }
 
-.social-link:hover,
+.social-link:hover .social-current,
 .social-link:focus .social-current {
   fill: var(--white-txt-cl);
 }
@@ -463,7 +464,7 @@ img {
   transition: fill var(--animation);
 }
 
-.customers-link:hover,
+.customers-link:hover .customers-icon,
 .customers-link:focus .customers-icon {
   fill: var(--main-bg-btn-cl);
 }
