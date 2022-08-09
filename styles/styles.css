@@ -178,8 +178,6 @@ img {
   border-radius: 2px;
 }
 
-.nav-link {
-}
 .hover-link {
   transition: color var(--animation);
 }
@@ -272,12 +270,6 @@ img {
 
 /*Advantades*/
 
-.advantades {
-}
-
-.advantades-item {
-}
-
 .adventages-icons {
   display: flex;
   align-items: center;
@@ -303,8 +295,6 @@ img {
   letter-spacing: 0.03em;
 }
 
-.advantades-article {
-}
 /*Work*/
 
 .work {
@@ -348,9 +338,6 @@ img {
   margin-right: auto;
 }
 
-.command-list {
-}
-
 .command-list-item {
   background-color: var(--white-bg-cl);
   text-align: center;
@@ -358,9 +345,6 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.command-img {
 }
 
 .command-border {
@@ -525,6 +509,28 @@ img {
   margin-bottom: 20px;
 }
 
+/*Foter form*/
+.footer-form {
+}
+.footer-label {
+}
+
+.footer-form-title {
+}
+
+.footer-input {
+}
+
+.footer-button {
+  background-color: var(--main-bg-btn-cl);
+}
+
+.footer-button-text {
+}
+
+.footer-form-icon {
+}
+
 /*PORTFOLIO*/
 
 /*Projekts*/
@@ -682,6 +688,10 @@ img {
   border-radius: 4px;
   transition: transform var(--animation), opacity var(--animation);
   opacity: 1;
+  padding-left: 29px;
+  padding-right: 52px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .modal-btn {
@@ -696,8 +706,62 @@ img {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--white-bg-cl);
-  padding: 0;
   cursor: pointer;
 }
-.modal-btn-icon {
+
+/*Form-modal*/
+.form {
+}
+
+.form-title {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-txt-cl);
+}
+
+.form-group {
+  --gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  --item: 1;
+}
+.form-text {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+}
+.form-input {
+  margin: 0;
+}
+
+.form-icon {
+  fill: #212121;
+}
+.form-textarea {
+  resize: none;
+}
+.checkbox-ladel {
+  display: block;
+  margin-bottom: 30px;
+}
+.contract {
+  text-decoration:underline;
+  color: var(--accent-txt-cl);
+}
+.form-button {
+  
+}
+
+.form-button-text {
+ 
 }
