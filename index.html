@@ -589,35 +589,31 @@
         <!--Form-modal-->
         <form class="form" action="">
           <strong class="form-title">Залиште свої дані, ми вам передзвонимо</strong>
-          <div class="form-group card-set" role="group">
-            <label class="form-label card-item">
-              <span class="form-text">Ім'я</span>
-              <input class="form-input" name="Ім'я" type="text" placeholder="Іван" />
-              <svg class="form-icon" width="12px" height="12px">
-                <use href="./images/icons.svg#icon-form-name"></use></svg
+          <div class="form-group" role="group">
+            <span class="form-text">Ім'я</span>
+            <label class="form-label">
+              <input class="form-input" name="Ім'я" type="text" />
+              <svg class="form-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-form-person"></use></svg
             ></label>
 
-            <label class="form-label card-item">
-              <span class="form-text">Телефон</span>
-              <input
-                class="form-input"
-                name="Телефон"
-                type="tel"
-                placeholder="+38-(068)-11-11-111" />
-              <svg class="form-icon" width="13px" height="13px">
-                <use href="./images/icons.svg#icon-form-tel"></use></svg
+            <span class="form-text">Телефон</span>
+            <label class="form-label">
+              <input class="form-input" name="Телефон" type="tel" />
+              <svg class="form-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#icon-form-phone"></use></svg
             ></label>
 
-            <label class="form-label card-item">
-              <span class="form-text">Пошта</span>
-              <input class="form-input" name="Пошта" type="email" placeholder="example@gmail.com" />
-              <svg class="form-icon" width="15px" height="20px">
+            <span class="form-text">Пошта</span>
+            <label class="form-label">
+              <input class="form-input" name="Пошта" type="email" />
+              <svg class="form-icon" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-form-email"></use>
               </svg>
             </label>
 
-            <label class="form-label card-item">
-              <span class="form-text">Коментарі</span>
+            <span class="form-text">Коментарі</span>
+            <label class="form-label">
               <textarea
                 class="form-textarea"
                 name="Comments"
@@ -627,18 +623,17 @@
               ></textarea>
             </label>
           </div>
-          <label class="checkbox-label" for="checkbox">
-            <input class="form-input" name="Умови" type="checkbox" />
-            <span class="form-text"
+          <label class="checkbox-label">
+            <input class="checkbox-input visually-hidden" name="checkbox" type="checkbox" checked />
+            <svg class="checkbox-icon" width="16px" height="15px">
+              <use class="checkbox-icon-uncheck" href="./images/icons.svg#icon-icon-uncheck"></use>
+              <use class="checkbox-icon-check" href="./images/icons.svg#icon-icon-check"></use>
+            </svg>
+            <span class="checkbox-text"
               >Погоджуюся з розсилкою та приймаю <a class="contract" href="">Умови договору</a>
             </span>
-            <svg class="form-icon" width="15px" height="20px">
-              <use href="./images/icons.svg#icon-modal-halochka"></use>
-            </svg>
           </label>
-          <button class="form-button" type="submit">
-            <span class="form-button-text">Відправити</span>
-          </button>
+          <button class="form-button" type="submit">Відправити</button>
         </form>
       </div>
     </div>

@@ -31,9 +31,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
 }
+
 .no-scroll {
   overflow: hidden;
 }
+
 /*Частичный ресет браузера start*/
 a {
   text-decoration: none;
@@ -166,6 +168,7 @@ img {
   position: relative;
   color: var(--accent-txt-cl);
 }
+
 .current::after {
   position: absolute;
   content: '';
@@ -203,16 +206,20 @@ img {
   margin-right: 10px;
   transition: fill var(--animation);
 }
+
 .contact-icons:hover {
   fill: var(--main-bg-btn-cl);
 }
+
 .contact-link {
   color: inherit;
   transition: color var(--animation);
 }
+
 .contact-link:hover .contact-icons {
   fill: var(--main-bg-btn-cl);
 }
+
 .contact-link:focus .contact-icons {
   fill: var(--main-bg-btn-cl);
 }
@@ -287,6 +294,7 @@ img {
   color: var(--black-txt-cl);
   margin-bottom: 10px;
 }
+
 .item-title {
   font-weight: 700;
   font-size: 14px;
@@ -313,9 +321,11 @@ img {
 .work-list {
   --item: 3;
 }
+
 .work-item {
   position: relative;
 }
+
 .work-overlay-text {
   position: absolute;
   display: flex;
@@ -374,6 +384,7 @@ img {
 .social-list {
   --gap: 10px;
 }
+
 .social-item {
 }
 
@@ -387,12 +398,15 @@ img {
   border-radius: 50%;
   transition: background-color var(--animation);
 }
+
 .footer .social-link {
   background-color: var(--footer-icons-bg-cl);
 }
+
 .footer .social-current {
   fill: var(--white-txt-cl);
 }
+
 .social-link:hover,
 .social-link:focus {
   background-color: var(--main-bg-btn-cl);
@@ -428,6 +442,7 @@ img {
 
 .customers-item {
 }
+
 .customers-link {
   display: flex;
   align-items: center;
@@ -439,10 +454,12 @@ img {
   padding: 16px 32px;
   transition: border-color var(--animation);
 }
+
 .customers-link:hover,
 .customers-link:focus {
   border-color: var(--main-bg-btn-cl);
 }
+
 .customers-icon {
   fill: var(--icons-cl);
   transition: fill var(--animation);
@@ -461,13 +478,16 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer .card-set {
   align-items: baseline;
 }
+
 .footer .logo-link {
   display: block;
   margin-bottom: 20px;
 }
+
 .logo-white {
   color: var(--white-txt-cl);
 }
@@ -487,13 +507,16 @@ img {
 .adress-link {
   color: inherit;
 }
+
 .footer-link-cl {
   transition: color var(--animation);
 }
+
 .footer-link-cl:hover,
 .footer-link-cl:focus {
   color: var(--white-txt-cl);
 }
+
 .adress-link[target='_blank'] {
   color: var(--white-txt-cl);
 }
@@ -504,6 +527,7 @@ img {
   margin: 0;
   padding: 0;
 }
+
 .join-title {
   color: var(--white-txt-cl);
   margin-bottom: 20px;
@@ -512,6 +536,7 @@ img {
 /*Foter form*/
 .footer-form {
 }
+
 .footer-label {
 }
 
@@ -578,10 +603,12 @@ img {
 
 .portfolio-item {
 }
+
 .portfolio-link {
   display: block;
   transition: box-shadow var(--animation);
 }
+
 .portfolio-link:hover,
 .portfolio-link:focus {
   display: block;
@@ -593,10 +620,12 @@ img {
 .portfolio-img {
   width: 100%;
 }
+
 .portfolio-photo {
   position: relative;
   overflow: hidden;
 }
+
 .overlay {
   display: flex;
   align-items: center;
@@ -622,14 +651,17 @@ img {
   padding-left: 24px;
   padding-right: 24px;
 }
+
 .portfolio-link:hover .overlay {
   transform: translateY(0%);
   opacity: 1;
 }
+
 .portfolio-link:focus .overlay {
   transform: translateY(0%);
   opacity: 1;
 }
+
 .portfolio-border {
   border: 1px solid #eeeeee;
   border-top: none;
@@ -644,6 +676,7 @@ img {
   color: var(--black-txt-cl);
   margin-bottom: 4px;
 }
+
 .portfolio-article {
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -711,6 +744,7 @@ img {
 
 /*Form-modal*/
 .form {
+  text-align: center;
 }
 
 .form-title {
@@ -725,43 +759,110 @@ img {
 }
 
 .form-group {
-  --gap: 10px;
-  margin-bottom: 20px;
 }
 
-.form-label {
-  --item: 1;
-}
 .form-text {
-  display: flex;
-  flex-direction: column;
+  display: block;
+  text-align: left;
   font-weight: 400;
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
+  margin-bottom: 4px;
 }
-.form-input {
-  margin: 0;
+
+.form-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.form-label:last-child {
+  margin-bottom: 0;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 11px;
+  padding-left: 42px;
+}
+
+.form-input:hover ,
+.form-input:focus {
+  border-color: var(--main-bg-btn-cl);
+}
+
+.form-icon:hover ,
+.form-icon:focus  {
+  fill: var(--accent-txt-cl);
 }
 
 .form-icon {
-  fill: #212121;
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  fill: var(--black-txt-cl);
 }
 .form-textarea {
+  padding: 12px 16px;
   resize: none;
+  margin-bottom: 20px;
+  height: 120px;
 }
-.checkbox-ladel {
-  display: block;
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   margin-bottom: 30px;
 }
-.contract {
-  text-decoration:underline;
-  color: var(--accent-txt-cl);
+
+.checkbox-input:checked + .checkbox-icon .checkbox-icon-uncheck {
+  opacity: 0;
+  transition: opacity var(--animation);
 }
+
+.checkbox-icon-check {
+  opacity: 0;
+}
+
+.checkbox-input:checked + .checkbox-icon .checkbox-icon-check {
+  opacity: 1;
+  transition: opacity var(--animation);
+}
+
+.checkbox-text {
+  user-select: none;
+}
+
+.contract {
+  text-decoration: underline;
+  color: var(--accent-txt-cl);
+  text-underline-position: under;
+}
+
 .form-button {
-  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  line-height: calc(30 / 16);
+  color: var(--white-txt-cl);
+  background: var(--main-bg-btn-cl);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 52px;
 }
 
 .form-button-text {
- 
 }
