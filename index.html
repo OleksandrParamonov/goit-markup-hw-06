@@ -563,18 +563,22 @@
       </div>
 
       <!--Foter form-->
-      <form class="footer-form" action="">
-        <label class="footer-label">
-          <span class="footer-form-title">Підпишіться на розсилку</span>
-          <input class="footer-input" name="Пошта" type="email" placeholder="E-mail" />
-        </label>
-      </form>
-      <button class="footer-button" type="submit">
-        <span class="footer-button-text">Підписатися</span>
-        <svg class="footer-form-icon" width="24px" height="24px">
-          <use href="./images/icons.svg#icon-footer-icon"></use>
-        </svg>
-      </button>
+      <div class="footer-form card-set">
+        <form class="footer-form-email" action="">
+          <div class="footer-flex-email card-item">
+            <h2 class="footer-form-title">Підпишіться на розсилку</h2>
+            <label class="footer-label">
+              <input class="footer-input" name="Пошта" type="email" placeholder="E-mail" />
+            </label>
+          </div>
+        </form>
+        <button class="footer-button card-item" type="submit">
+          Підписатися
+          <svg class="footer-form-icon" width="24px" height="24px">
+            <use href="./images/icons.svg#icon-footer-icon"></use>
+          </svg>
+        </button>
+      </div>
     </footer>
 
     <!--Modal window-->
@@ -630,7 +634,10 @@
               <use class="checkbox-icon-check" href="./images/icons.svg#icon-icon-check"></use>
             </svg>
             <span class="checkbox-text"
-              >Погоджуюся з розсилкою та приймаю <a class="contract" href="">Умови договору</a>
+              >Погоджуюся з розсилкою та приймаю
+              <a class="contract" target="_blank" rel="noopener noreferrer" href=""
+                >Умови договору</a
+              >
             </span>
           </label>
           <button class="form-button" type="submit">Відправити</button>
