@@ -535,20 +535,20 @@ img {
 
 /*Foter form*/
 .footer-form {
+  margin-left: 23px;
   --gap: 12px;
-}
-.footer-form .card-set {
-  align-items: flex-start;
+  justify-content: center;
 }
 
+.footer .footer-form {
+  align-items: flex-end;
+}
 .footer-form {
 
 }
 
 .footer-flex-email {
-display: block;
-text-align: left;
---item: 1;
+
 
 }
 
@@ -565,6 +565,17 @@ text-align: left;
 }
 
 .footer-input {
+  display: block;
+  width: 358px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: transparent;
+    color: var(--white-txt-cl);
 }
 
 .footer-button {
@@ -582,6 +593,12 @@ text-align: left;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   color: var(--white-txt-cl);
+  transition: background var(--animation);
+}
+
+.footer-button:hover,
+.footer-button:focus {
+  background: var(--bg-btn-cl);
 }
 
 .footer-form-icon {
@@ -926,14 +943,13 @@ text-align: left;
   letter-spacing: 0.06em;
   line-height: calc(30 / 16);
   color: var(--white-txt-cl);
-  background: var(--main-bg-btn-cl);
+  background-color: var(--main-bg-btn-cl);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
   cursor: pointer;
   padding: 10px 52px;
   outline: transparent;
-  background: var(--bg-btn-cl);
   transition: background var(--animation);
 }
 
